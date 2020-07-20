@@ -263,9 +263,6 @@ h3 {
 .flex-client-list {
   display: flex;
   justify-content: space-evenly;
-  margin-left: 32px;
-  margin-right: 32px;
-  margin-bottom: 24px;
 }
 .flex-client-item {
   width: 170px;
@@ -277,49 +274,85 @@ h3 {
   justify-content: center;
   align-items: center;
 }
+.flex-client-item:not(:last-child) {
+  margin-right: 30px;
+}
 
 /*footer*/
 footer {
   background-color: var(--darkest-background-color);
 }
+.footer-section {
+  display: flex;
+}
 .logo-footer {
   font-family: Raleway;
   font-weight: 700;
+  margin-right: 147px;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   color: var(--white-accent-color);
-}
-.footer-place {
-  font-weight: 400;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--white-accent-color);
-}
-.footer-contacts {
-  display: block;
-  font-weight: 400;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  padding-bottom: 60px;
-  color: var(--footer-contacts-color);
-}
-.join {
-  font-weight: bold;
-  line-height: 1.14;
-  color: var(--white-accent-color);
-  text-transform: uppercase;
-}
-.footer-section {
-  display: flex;
-  align-items: center;
 }
 .footer-address {
   display: block;
   padding-top: 60px;
   margin-right: 147 px;
   justify-content: space-around;
+}
+.footer-place {
+  font-weight: 400;
+  margin-bottom: 9px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--white-accent-color);
+}
+.footer-mail {
+  display: block;
+  padding: 0;
+  margin: 0;
+
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--footer-contacts-color);
+}
+.footer-phone {
+  display: block;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--footer-contacts-color);
+  padding-bottom: 60px;
+}
+.join {
+  display: block;
+  font-weight: bold;
+  margin-top: 72px;
+  margin-bottom: 20px;
+  line-height: 1.14;
+  color: var(--white-accent-color);
+  text-transform: uppercase;
+}
+.footer-social-list {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 32px;
+  margin-bottom: 24px;
+}
+.footer-social-item:not(:last-child) {
+  margin-right: 10px;
+}
+.footer-social-item {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  box-sizing: border-box;
+  border-radius: 100px;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
 }
 .active-item {
   color: var(--accent-color);
